@@ -23,10 +23,17 @@ public class  ContiguousArray{
           - maxLen =max(maxLen, i-j)
           
           initilising sum 0 as -1 to handle the edgecase
-           [0,1,1,1,1,0,0,0]
-                ^
-          sum =0|-1|0|1|
-          maxLen =0|0|1
+           [1,1,1,1,0,0,0,0]
+                          ^
+			[0,1]{0,-1}
+			{
+				1->0
+				2->1
+				3->2
+				4->3
+			}
+			maxLen = max(0,2)=6
+       
           
           {0=-1, -1=0, 1=2, 2=3, 3=4}
 
